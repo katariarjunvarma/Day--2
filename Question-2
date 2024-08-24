@@ -1,0 +1,24 @@
+#include <iostream>
+
+int main() {
+    int score;
+
+    std::cout << "Enter the score: ";
+    std::cin >> score;
+
+    if (score >= 90 && score <= 100) {
+        std::cout << "Grade: A" << std::endl;
+    } else if (score >= 80 && score <= 89) {
+        std::cout << "Grade: B" << std::endl;
+    } else if (score >= 70 && score <= 79) {
+        std::cout << "Grade: C" << std::endl;
+    } else if (score >= 60 && score <= 69) {
+        std::cout << "Grade: D" << std::endl;
+    } else if (score >= 0 && score <= 59) {
+        std::cout << "Grade: F" << std::endl;
+    } else {
+        std::cout << "Invalid score" << std::endl;
+    }
+
+    return 0;
+}
